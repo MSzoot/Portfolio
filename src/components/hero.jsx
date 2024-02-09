@@ -12,7 +12,7 @@ export default function Hero() {
           <button className="btn-primary btn">Contact me </button>
         </div>
         <img
-          src="/src/assets/img/17074059682304nh1lou0.png"
+          src="/public/17074059682304nh1lou0.png"
           className="mt-10 max-w-sm"
         />
       </div>
