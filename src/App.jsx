@@ -6,7 +6,7 @@ import Nav from "./components/nav";
 import { useState } from "react";
 
 export const App = () => {
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(true);
 
   const toggleTheme = () => {
     setDarkTheme((prevTheme) => !prevTheme);

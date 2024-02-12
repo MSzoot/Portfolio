@@ -9,15 +9,15 @@ import {
   SiGithub,
 } from "react-icons/si";
 
-const iSize = 30;
+const iconSize = 22;
 
 const techIcons = {
-  html: <SiHtml5 size={iSize} />,
-  css: <SiCss3 size={iSize} />,
-  javascript: <SiJavascript size={iSize} />,
-  react: <SiReact size={iSize} />,
-  daisyui: <SiDaisyui size={iSize} />,
-  tailwind: <SiTailwindcss size={iSize} />,
+  html: <SiHtml5 size={iconSize} />,
+  css: <SiCss3 size={iconSize} />,
+  javascript: <SiJavascript size={iconSize} />,
+  react: <SiReact size={iconSize} />,
+  daisyui: <SiDaisyui size={iconSize} />,
+  tailwind: <SiTailwindcss size={iconSize} />,
 };
 
 const Cards = data.map((project, index) => {
