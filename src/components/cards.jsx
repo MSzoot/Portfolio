@@ -22,8 +22,15 @@ const techIcons = {
 
 const Cards = data.map((project, index) => {
   return (
-    <div className="card bg-base-300 shadow-xl " key={index}>
-      <figure>
+    <div
+      className={
+        !project.finished
+          ? "bg-base card border-2 border-base-300 text-slate-600 shadow-xl "
+          : "bg-base card border-2 border-base-300 shadow-xl "
+      }
+      key={index}
+    >
+      <figure className={!project.finished ? "grayscale" : null}>
         <img
           src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
           alt="Album"
@@ -38,7 +45,7 @@ const Cards = data.map((project, index) => {
               const icon = techIcons[tech];
               return (
                 <div
-                  className="mr-2 flex flex-col items-center justify-center"
+                  className="mr-2 flex -translate-x-2 flex-col items-center justify-center"
                   key={index}
                 >
                   {icon}
@@ -47,16 +54,20 @@ const Cards = data.map((project, index) => {
               );
             })}
           </div>
-          <div className="flex w-full items-center justify-end gap-4">
-            <a
-              href="www.github.com"
-              className="flex items-center justify-center gap-1"
-            >
-              <SiGithub />
-              Source Code
-            </a>
-            <button className="btn-secondary btn">Live project</button>
-          </div>
+          {project.finished ? (
+            <div className="flex w-full items-center justify-end gap-4">
+              <a
+                href={project.git}
+                className="flex items-center justify-center gap-1"
+              >
+                <SiGithub />
+                Source Code
+              </a>
+              <a href={project.link}>
+                <button className="btn-secondary btn">Live project</button>
+              </a>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
