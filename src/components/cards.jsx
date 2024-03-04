@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiReact,
   SiGithub,
+  SiBootstrap,
 } from "react-icons/si";
 
 const iconSize = 22;
@@ -18,6 +19,7 @@ const techIcons = {
   react: <SiReact size={iconSize} />,
   daisyui: <SiDaisyui size={iconSize} />,
   tailwind: <SiTailwindcss size={iconSize} />,
+  bootstrap: <SiBootstrap size={iconSize} />,
 };
 
 const Cards = data.map((project, index) => {
@@ -31,12 +33,9 @@ const Cards = data.map((project, index) => {
       key={index}
     >
       <figure className={!project.finished ? "grayscale" : null}>
-        <img
-          src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-          alt="Album"
-        />
+        <img src={project.picture} alt="Album" />
       </figure>
-      <div className="card-body">
+      <div className="card-body flex flex-col justify-between">
         <h2 className="card-title">{project.title}</h2>
         <p>{project.desc}</p>
         <div className="justify-left card-actions">
