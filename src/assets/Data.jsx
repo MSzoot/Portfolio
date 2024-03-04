@@ -3,7 +3,7 @@ const data = [
     title: "Kesgrave Dental Care",
     desc: "Website made for a local dental practice. Animated, fully responsive, SEO optimized. ",
     tStack: ["html", "css", "javascript", "bootstrap"],
-    picture: "/public/img/Kesgrave Dental Care Monogram Logo-03.png",
+    picture: "/public/img/KDC.png",
     link: "https://newdentalpractice.netlify.app/",
     git: "https://github.com/MSzoot/Kesgrave-Dental-Care",
     finished: true,

@@ -39,7 +39,7 @@ const Cards = data.map((project, index) => {
         <h2 className="card-title">{project.title}</h2>
         <p>{project.desc}</p>
         <div className="card-actions">
-          <div className="mt-4 flex items-center justify-center gap-2 p-1 px-2 ">
+          <div className="my-4 flex items-center justify-center gap-2 p-1 px-2 ">
             {project.tStack.map((tech, index) => {
               const icon = techIcons[tech];
               return (
@@ -58,11 +58,13 @@ const Cards = data.map((project, index) => {
               <a
                 href={project.git}
                 className="flex items-center justify-center gap-1"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <SiGithub />
                 Source Code
               </a>
-              <a href={project.link}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <button className="btn-secondary btn">Live project</button>
               </a>
             </div>
