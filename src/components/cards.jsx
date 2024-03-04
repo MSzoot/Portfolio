@@ -38,8 +38,8 @@ const Cards = data.map((project, index) => {
       <div className="card-body flex flex-col justify-between">
         <h2 className="card-title">{project.title}</h2>
         <p>{project.desc}</p>
-        <div className="justify-left card-actions">
-          <div className="flex items-center justify-center gap-1 p-1 px-2 ">
+        <div className="card-actions">
+          <div className="mt-4 flex items-center justify-center gap-2 p-1 px-2 ">
             {project.tStack.map((tech, index) => {
               const icon = techIcons[tech];
               return (

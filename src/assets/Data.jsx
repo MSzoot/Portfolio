@@ -1,11 +1,11 @@
 const data = [
   {
     title: "Kesgrave Dental Care",
-    desc: "Website made for a local dental practice. Animated, fully responsive, SEO optimized",
+    desc: "Website made for a local dental practice. Animated, fully responsive, SEO optimized. ",
     tStack: ["html", "css", "javascript", "bootstrap"],
-    picture: "/public/img/Screenshot 2024-03-04 at 13.41.27.png",
+    picture: "/public/img/Kesgrave Dental Care Monogram Logo-03.png",
     link: "https://newdentalpractice.netlify.app/",
-    git: "www.github.com",
+    git: "https://github.com/MSzoot/Kesgrave-Dental-Care",
     finished: true,
   },
   {
@@ -14,7 +14,7 @@ const data = [
     tStack: ["html", "css", "javascript"],
     picture: "www.picture.com",
     link: "www.dietmate.com",
-    git: "www.github.com",
+    git: "https://github.com/MSzoot/Kesgrave-Dental-Care",
     finished: true,
   },
   {
