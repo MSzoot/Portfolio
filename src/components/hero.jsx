@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className="hero mx-auto min-h-screen w-8/12 bg-base-100">
-      <div className="hero-content flex-col-reverse gap-10 text-center md:flex-row md:text-left">
+    <div className="hero mx-auto min-h-screen w-10/12 bg-base-100">
+      <div className="hero-content flex-col-reverse gap-10 text-center md:text-left lg:flex-row">
         <div className="md:w-6/12">
           <h1 className="text-5xl font-bold ">Hi!</h1>
           <p className="py-6">
@@ -11,7 +11,7 @@ export default function Hero() {
           </p>
           <button className="btn-primary btn">Contact me </button>
         </div>
-        <img src="/public/img/msv1-removebg.png" className="mt-10 max-w-md" />
+        <img src="/public/img/msv1.jpeg" className="mt-10 max-w-md" />
       </div>
     </div>
   );
