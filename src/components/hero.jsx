@@ -13,7 +13,7 @@ export default function Hero() {
           </p>
           <button className="btn-primary btn">Contact me </button>
         </div>
-        <img src="/public/img/msv1.jpeg" className="mt-10 max-w-md" />
+        <img src="/msv1.jpeg" className="mt-10 max-w-md" />
       </div>
     </div>
   );
