@@ -1,3 +1,4 @@
+import msphoto from "../imgs/msv1.jpeg";
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   return (
@@ -8,12 +9,12 @@ export default function Hero() {
           <p className="py-6">
             I'm Marcin, Im a IT tech with an enduring passion for all things
             related to computer tinkering. Recently, I've discovered a new
-            passion: coding. This exciting journey has ignited my creativity and
+            passion coding. This exciting journey has ignited my creativity and
             fueled my drive to excel in the realm of programming.
           </p>
           <button className="btn-primary btn">Contact me </button>
         </div>
-        <img src="/msv1.jpeg" className="mt-10 max-w-md" />
+        <img src={msphoto} className="mt-10 max-w-md" />
       </div>
     </div>
   );
