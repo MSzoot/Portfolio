@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   return (
     <div className="hero mx-auto min-h-screen w-10/12 bg-base-100">
@@ -5,9 +6,10 @@ export default function Hero() {
         <div className="md:w-6/12">
           <h1 className="text-5xl font-bold ">Hi!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            I'm Marcin, Im a IT tech with an enduring passion for all things
+            related to computer tinkering. Recently, I've discovered a new
+            passion: coding. This exciting journey has ignited my creativity and
+            fueled my drive to excel in the realm of programming.
           </p>
           <button className="btn-primary btn">Contact me </button>
         </div>
