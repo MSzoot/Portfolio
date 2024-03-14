@@ -1,9 +1,11 @@
+import KDCphoto from "../imgs/KDC.png";
+
 const data = [
   {
     title: "Kesgrave Dental Care",
     desc: "Website made for a local dental practice. Animated and fully responsive. ",
     tStack: ["html", "css", "javascript", "bootstrap"],
-    picture: "/public/img/KDC.png",
+    picture: KDCphoto,
     link: "https://kesgravedentalcare.com/",
     git: "https://github.com/MSzoot/Kesgrave-Dental-Care",
     finished: true,
