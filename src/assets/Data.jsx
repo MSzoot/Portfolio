@@ -4,7 +4,7 @@ import Nutricraft from "../imgs/Nutricraft.png";
 const data = [
   {
     title: "Kesgrave Dental Care",
-    desc: "Website made for a local dental practice. Animated and fully responsive. ",
+    desc: "KDC is a website crafted for a local dental practice. This multipage platform is not only fully responsive but also boasts captivating animations. Website is designed in accordance with the branding manual of KCD.",
     tStack: ["html", "css", "javascript", "bootstrap"],
     picture: KDCphoto,
     link: "https://kesgravedentalcare.com/",
