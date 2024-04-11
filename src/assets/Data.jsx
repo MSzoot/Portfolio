@@ -16,8 +16,8 @@ const data = [
     desc: "Nuticraft AI is a sophisticated React application designed to gather user data, including their dietary preferences and favorite ingredients. With this information in hand, it crafts personalized daily meal plan using the power of OpenAI. These plans are tailored to meet the user's nutritional needs and assist them in achieving their wellness goals.",
     tStack: ["html", "css", "javascript", "react", "tailwind"],
     picture: Nutricraft,
-    link: "www.nutricraftAI.com",
-    git: "https://github.com/MSzoot/Nutri",
+    link: "https://nutricraftai.netlify.app/",
+    git: "https://github.com/MSzoot/NutriCraft-Ai",
     finished: true,
   },
   {
