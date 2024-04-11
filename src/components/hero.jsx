@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="md:w-6/12">
           <h1 className="text-5xl font-bold ">Hi!</h1>
           <p className="py-6">
-            I'm Marcin, an IT technician based in Ipswich UK with an enduring
+            I'm Martin, an IT technician based in Ipswich UK with an enduring
             passion for all things related to computer tinkering. Recently, I've
             discovered a new passion: coding. This exciting journey has ignited
             my creativity and fueled my drive to excel in the realm of
