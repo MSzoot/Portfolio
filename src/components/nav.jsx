@@ -8,7 +8,9 @@ export default function Nav({ toggleTheme }) {
   return (
     <div className="navbar fixed z-10 rounded-b-md border-b border-base-300 bg-base-100">
       <div className="flex-1 px-2 lg:flex-none">
-        <a className="ml-4 text-lg font-bold">Martin Szot</a>
+        <a className="ml-4 text-lg font-bold" href="#">
+          Martin Szot
+        </a>
       </div>
       <div className="flex flex-1 justify-end px-2">
         <div className="flex items-stretch">
@@ -18,7 +20,12 @@ export default function Nav({ toggleTheme }) {
           >
             Projects
           </a>
-          <a className="btn-ghost btn hidden rounded-btn sm:flex">Contact</a>
+          <a
+            className="btn-ghost btn hidden rounded-btn sm:flex"
+            href="#contact"
+          >
+            Contact
+          </a>
           <label className="swap-rotate swap btn-ghost btn">
             <input type="checkbox" onClick={handleToggle} />
             <svg

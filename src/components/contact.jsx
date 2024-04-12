@@ -24,6 +24,7 @@ const Contact = () => {
     <form
       onSubmit={handleSubmit}
       className="mx-auto mb-10 flex w-8/12 flex-col  md:w-4/12"
+      id="contact"
     >
       <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
       <div className="mb-4">
