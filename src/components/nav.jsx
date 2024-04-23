@@ -1,8 +1,15 @@
 import { IoMenu } from "react-icons/io5";
+import { useState } from "react"; // Import useState hook
 
 export default function Nav({ toggleTheme }) {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
+
   const handleToggle = () => {
     toggleTheme();
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
   };
 
   return (
@@ -48,23 +55,26 @@ export default function Nav({ toggleTheme }) {
               tabIndex={0}
               role="button"
               className="btn-ghost btn rounded-btn sm:hidden"
+              onClick={toggleDropdown} // Add onClick handler to toggle dropdown
             >
               <IoMenu size={20} />
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu z-[1] mt-4 w-52 rounded-box bg-base-100 p-2 shadow-2xl"
-            >
-              <li>
-                <a>About me </a>
-              </li>
-              <li>
-                <a>Projects</a>
-              </li>
-              <li>
-                <a>Contact me</a>
-              </li>
-            </ul>
+            {isDropdownOpen && ( // Render dropdown content conditionally based on state
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu z-[1] mt-4 w-52 rounded-box bg-base-100 p-2 shadow-2xl"
+              >
+                <li>
+                  <a href="#">About me </a>
+                </li>
+                <li>
+                  <a href="#projects">Projects</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact me</a>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </div>
