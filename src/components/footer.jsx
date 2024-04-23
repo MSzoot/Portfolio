@@ -7,10 +7,10 @@ export default function Footer() {
         <p>Copyright © 2024 - All right reserved</p>
       </aside>
       <div className="flex gap-4 md:place-self-center md:justify-self-end">
-        <a>
+        <a href="https://www.linkedin.com/in/marcin-szot-7b2308119/">
           <SiLinkedin size={22} />
         </a>
-        <a>
+        <a href="https://github.com/MSzoot">
           <SiGithub size={22} />
         </a>
       </div>
