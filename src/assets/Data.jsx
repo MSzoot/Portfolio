@@ -5,7 +5,7 @@ import Coming from "../imgs/Coming.jpg";
 const data = [
   {
     title: "Kesgrave Dental Care",
-    desc: "KDC is a website crafted for a local dental practice. This multipage platform is not only fully responsive but also boasts captivating animations. Website is designed in accordance with the branding manual of KCD.",
+    desc: "Website I crafted for a local dental practice. KDC it's fully responsive, with engaging animations and excellent performance. The site is designed in accordance with the branding manual of the brand.",
     tStack: ["html", "css", "javascript", "bootstrap"],
     picture: KDCphoto,
     link: "https://kesgravedentalcare.com/",
@@ -14,7 +14,7 @@ const data = [
   },
   {
     title: "NutriCraft AI",
-    desc: "Nuticraft AI is a sophisticated React application designed to gather user data, including their dietary preferences and favorite ingredients. With this information in hand, it crafts personalized daily meal plan using the power of OpenAI. These plans are tailored to meet the user's nutritional needs and assist them in achieving their wellness goals.",
+    desc: "Nuticraft AI is an React application aimed at offering users a straightforward one-day diet plan. It collects data regarding the user's weight, height, and activity level, then computes their daily nutritional requirements, taking into account their dietary preferences and favorite ingredients. With this data, it generates personalized daily meal plans using the capabilities of OpenAI. These plans are customized to fulfill users' nutritional needs and support them in reaching their wellness objectives.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Nutricraft,
     link: "https://nutricraftai.netlify.app/",
