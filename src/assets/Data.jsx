@@ -22,9 +22,9 @@ const data = [
     finished: true,
   },
   {
-    title: "Cooming soon - ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex nam iste corporis! Autem dolore iusto ab laudantium ipsam explicabo, ratione accusantium hic, voluptatem molestias similique ducimus. Suscipit, rerum voluptate.",
-    tStack: ["html", "css", "javascript", "react"],
+    title: "HuryUpGift.com - Comming Soon",
+    desc: "HurryUpGift is a React application designed to help users find the perfect gift for any occasion. By selecting a person and providing a brief description, such as 'cat-loving nerd', users receive AI-generated gift suggestions tailored to the recipient's personality. The app leverages the Amazon affiliate program for seamless purchasing and revenue generation. With its personalized approach, HurryUpGift simplifies gift shopping and ensures that users find the ideal present quickly and easily.",
+    tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Coming,
     link: "soon...",
     git: "soon.",
