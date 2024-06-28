@@ -1,4 +1,4 @@
-import msphoto from "../imgs/msv1.jpeg";
+import msphoto from "../imgs/msv1-removebg.png";
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   return (
