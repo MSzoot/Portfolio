@@ -18,7 +18,7 @@ export default function Hero() {
             Contact me
           </a>
         </div>
-        <img src={msphoto} className="mt-10 max-w-xs md:max-w-md" />
+        <img src={msphoto} alt="Photo of Marcin Szot , AI depotatified" className="mt-10 max-w-xs md:max-w-md" />
       </div>
     </div>
   );
