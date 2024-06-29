@@ -27,7 +27,7 @@ const Cards = data.map((project, index) => {
     <div
       className={
         !project.finished
-          ? "bg-base card  rounded-none text-slate-500 shadow-xl ring ring-base-300 "
+          ? "bg-base card  rounded-none text-slate-400 shadow-xl ring ring-base-300 "
           : "bg-base card  rounded-none shadow-xl ring ring-base-300 "
       }
       key={index}
