@@ -33,7 +33,10 @@ export default function Nav({ toggleTheme }) {
           >
             Contact
           </a>
-          <label className="swap-rotate swap btn-ghost btn">
+          <label
+            className="swap-rotate swap btn-ghost btn"
+            aria-label="Toggle Theme"
+          >
             <input type="checkbox" onClick={handleToggle} />
             <svg
               className="swap-on h-5 w-5 fill-current"

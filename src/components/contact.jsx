@@ -14,9 +14,6 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // You can use Netlify Forms or an API endpoint to handle form submissions
-    // For simplicity, we'll just log the data to the console
     console.log("Form Data:", formData);
   };
 
@@ -30,7 +27,7 @@ const Contact = () => {
       <div className="mb-4">
         <label className="form-control w-full">
           <div className="label">
-            <span className="label-text">Who you are?</span>
+            {/* <span className="label-text">Your name</span> */}
           </div>
           <input
             type="text"
@@ -46,7 +43,7 @@ const Contact = () => {
       <div className="mb-4">
         <label className="form-control w-full">
           <div className="label">
-            <span className="label-text">What is your email?</span>
+            {/* <span className="label-text">Your Email address</span> */}
           </div>
           <input
             type="text"
@@ -61,7 +58,7 @@ const Contact = () => {
       <div className="mb-4">
         <label className="form-control w-full">
           <div className="label">
-            <span className="label-text">Your message</span>
+            {/* <span className="label-text">Your message</span> */}
           </div>
           <textarea
             className="textarea-bordered textarea h-24 resize-none"
