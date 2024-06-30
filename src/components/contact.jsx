@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,28 +12,28 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  //stop default refresh after submission
   const handleSubmit = async (e) => {
     e.preventDefault();
   };
 
   return (
     <form
-      onSubmit={handleSubmit}
-      className="mx-auto mb-10 flex w-8/12 flex-col  md:w-4/12"
+      className="mx-auto mb-10 flex w-8/12 flex-col md:w-4/12"
       id="contact"
-      netlify
+      onSubmit={handleSubmit}
     >
       <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
       <div className="mb-4">
-        <label className="form-control w-full">
-          <div className="label">
-            {/* <span className="label-text">Your name</span> */}
-          </div>
+        <label htmlFor="name" className="form-control w-full">
+          Name:
           <input
             type="text"
             id="name"
-            placeholder="Name"
+            name="name"
+            placeholder="Your Name"
             className="input-bordered input w-full"
+            value={formData.name}
             onChange={handleChange}
             required
           />
@@ -41,14 +41,15 @@ const Contact = () => {
       </div>
 
       <div className="mb-4">
-        <label className="form-control w-full">
-          <div className="label">
-            {/* <span className="label-text">Your Email address</span> */}
-          </div>
+        <label htmlFor="email" className="form-control w-full">
+          Email:
           <input
-            type="text"
-            placeholder="Email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
             className="input-bordered input w-full"
+            value={formData.email}
             onChange={handleChange}
             required
           />
@@ -56,13 +57,16 @@ const Contact = () => {
       </div>
 
       <div className="mb-4">
-        <label className="form-control w-full">
-          <div className="label">
-            {/* <span className="label-text">Your message</span> */}
-          </div>
+        <label htmlFor="message" className="form-control w-full">
+          Message:
           <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
             className="textarea-bordered textarea h-24 resize-none"
-            placeholder="Your message"
+            value={formData.message}
+            onChange={handleChange}
+            required
           ></textarea>
         </label>
       </div>
