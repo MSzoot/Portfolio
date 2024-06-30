@@ -24,7 +24,7 @@ const data = [
   },
   {
     title: "Marcinszot.com",
-    desc: "This personal portfolio website showcases a sleek, minimalistic design. Built with React, it supports both dark and light themes. The site is fully responsive, performance-optimized, and adheres to best coding practices.",
+    desc: "This personal portfolio website showcases a sleek, minimalistic design. Built with React, it supports dark and light theme. The site is fully responsive, performance-optimized, and adheres to best coding practices.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Portfolio,
     link: "https://marcinszoot.netlify.app/",
