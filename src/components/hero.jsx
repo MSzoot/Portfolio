@@ -8,9 +8,9 @@ export default function Hero() {
           <h1 className="text-5xl font-bold">Hello!</h1>
           <p className="py-6">
             I'm Martin, a front-end developer from Ipswich. My interest is
-            deeply rooted in all things related to computer tinkering. Formerly
-            an IT technician focused on hardware, I recently began expanding my
-            skills, one of which was coding, and code has quickly become a true
+            deeply rooted in all things related to computer tinkering.
+            Previously focused primarily on IT hardware repairs, I have recently
+            embarked on expanding my skills, with coding quickly becoming a true
             passion of mine. This journey has ignited my creativity and fueled
             my drive to excel in the realm of programming.
           </p>

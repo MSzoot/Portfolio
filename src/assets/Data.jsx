@@ -15,7 +15,7 @@ const data = [
   },
   {
     title: "NutriCraft AI",
-    desc: "Nuticraft AI is an React application aimed at offering users a straightforward one-day diet plan. It collects data regarding the user's weight, height, and activity level, then computes their daily nutritional requirements, taking into account their dietary preferences and favorite ingredients. With this data, it generates personalized daily meal plans using the capabilities of OpenAI. These plans are customized to fulfill users' nutritional needs and support them in reaching their wellness objectives.",
+    desc: "React application designed to provide users with a straightforward one-day diet plan. It collects data on the user's weight, height, and activity level, calculates their daily nutritional requirements based on dietary preferences and favorite ingredients, and utilizes OpenAI capabilities to generate personalized meal plan. The application utilizes React Router for navigation, performs complex calculations for nutritional requirements, stores data in local storage for user convenience, and integrates with the OpenAI API to enhance meal plan generation tailored to users nutritional needs.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Nutricraft,
     link: "https://nutricraftai.netlify.app/",
@@ -23,8 +23,8 @@ const data = [
     finished: true,
   },
   {
-    title: "Marcinszot.com",
-    desc: "This personal portfolio website showcases a sleek, minimalistic design. Built with React, it supports dark and light theme. The site is fully responsive, performance-optimized, and adheres to best coding practices.",
+    title: "Portfolio",
+    desc: "This personal portfolio website showcases a sleek, minimalistic design. Built with React, it is designed to be easily scalable. The site is fully responsive, features dark and light mode, is performance-optimized, and adheres to best coding practices.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Portfolio,
     link: "https://marcinszoot.netlify.app/",
