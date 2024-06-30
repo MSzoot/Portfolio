@@ -33,7 +33,11 @@ const Cards = data.map((project, index) => {
       key={index}
     >
       <figure className={!project.finished ? "grayscale" : null}>
-        <img src={project.picture} alt="project thumbnail photo" />
+        <img
+          src={project.picture}
+          className="border-b border-base-300 "
+          alt="project thumbnail photo"
+        />
       </figure>
       <div className="card-body flex flex-col justify-between">
         <h2 className="card-title">{project.title}</h2>
