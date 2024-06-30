@@ -22,6 +22,7 @@ const Contact = () => {
       id="contact"
       onSubmit={handleSubmit}
       method="post"
+      data-netlify="true"
     >
       <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
       <div className="mb-4">
