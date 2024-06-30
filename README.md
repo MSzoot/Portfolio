@@ -1,4 +1,4 @@
-🌟 Martin's Portfolio
+
 Welcome to my portfolio repository! This project showcases my journey, skills, and projects as a developer. Dive in to explore my work and get to know more about me.
 
 
