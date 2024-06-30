@@ -1,83 +1,102 @@
-import { useState } from "react";
+import { Component } from "react";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+class ContactForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encodeFormData({
+        "form-name": "contact",
+        ...this.state,
+      }),
+    })
+      .then(() => alert("Success! Your message has been sent."))
+      .catch((error) => alert(error));
   };
 
-  return (
-    <form
-      className="mx-auto mb-10 flex w-8/12 flex-col md:w-4/12"
-      id="contact"
-      onSubmit={handleSubmit}
-      method="post"
-      data-netlify="true"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
-      <div className="mb-4">
-        <label htmlFor="name" className="form-control w-full">
-          Name:
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            className="input-bordered input w-full"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
-      <div className="mb-4">
-        <label htmlFor="email" className="form-control w-full">
-          Email:
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            className="input-bordered input w-full"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
+  encodeFormData = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
-      <div className="mb-4">
-        <label htmlFor="message" className="form-control w-full">
-          Message:
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"
-            className="textarea-bordered textarea h-24 resize-none"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </label>
-      </div>
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form
+        className="mx-auto mb-10 flex w-8/12 flex-col md:w-4/12"
+        onSubmit={this.handleSubmit}
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
+        <div className="mb-4">
+          <label htmlFor="name" className="form-control w-full">
+            Name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              className="input-bordered input w-full"
+              value={name}
+              onChange={this.handleChange}
+              required
+            />
+          </label>
+        </div>
 
-      <button type="submit" className="btn-secondary btn">
-        Send
-      </button>
-    </form>
-  );
-};
+        <div className="mb-4">
+          <label htmlFor="email" className="form-control w-full">
+            Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              className="input-bordered input w-full"
+              value={email}
+              onChange={this.handleChange}
+              required
+            />
+          </label>
+        </div>
 
-export default Contact;
+        <div className="mb-4">
+          <label htmlFor="message" className="form-control w-full">
+            Message:
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              className="textarea-bordered textarea h-24 resize-none"
+              value={message}
+              onChange={this.handleChange}
+              required
+            ></textarea>
+          </label>
+        </div>
+
+        <button type="submit" className="btn-secondary btn">
+          Send
+        </button>
+      </form>
+    );
+  }
+}
+
+export default ContactForm;
