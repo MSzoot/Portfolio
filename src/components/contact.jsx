@@ -46,6 +46,7 @@ const ContactForm = () => {
     <form
       className="mx-auto mb-10 flex w-8/12 flex-col md:w-4/12"
       onSubmit={handleSubmit}
+      id="contact"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
