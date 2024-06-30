@@ -1,6 +1,6 @@
-import KDCphoto from "../imgs/KDC.png";
-import Nutricraft from "../imgs/Nutricraft.png";
-import Coming from "../imgs/Coming.jpg";
+import KDCphoto from "../imgs/KDC.webp";
+import Nutricraft from "../imgs/Nutricraft.webp";
+import Coming from "../imgs/Coming.webp";
 
 const data = [
   {
