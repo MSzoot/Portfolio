@@ -53,7 +53,6 @@ const ContactForm = () => {
       <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
       <div className="mb-4">
         <label htmlFor="name" className="form-control w-full">
-          Name:
           <input
             type="text"
             id="name"
@@ -69,7 +68,6 @@ const ContactForm = () => {
 
       <div className="mb-4">
         <label htmlFor="email" className="form-control w-full">
-          Email:
           <input
             type="email"
             id="email"
@@ -85,7 +83,6 @@ const ContactForm = () => {
 
       <div className="mb-4">
         <label htmlFor="message" className="form-control w-full">
-          Message:
           <textarea
             id="message"
             name="message"
