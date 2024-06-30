@@ -1,6 +1,7 @@
 import KDCphoto from "../imgs/KDC.webp";
 import Nutricraft from "../imgs/Nutricraft.webp";
 import Coming from "../imgs/Coming.webp";
+import Portfolio from "../imgs/Portfolio.webp";
 
 const data = [
   {
@@ -22,9 +23,18 @@ const data = [
     finished: true,
   },
   {
-    title: "HuryUpGift.com - Comming Soon",
+    title: "Marcinszot.com",
     desc: "HurryUpGift is a React application designed to help users find the perfect gift for any occasion. By selecting a person and providing a brief description, such as 'cat-loving nerd', users receive AI-generated gift suggestions tailored to the recipient's personality. The app leverages the Amazon affiliate program for seamless purchasing and revenue generation. With its personalized approach, HurryUpGift simplifies gift shopping and ensures that users find the ideal present quickly and easily.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
+    picture: Portfolio,
+    link: "https://marcinszoot.netlify.app/",
+    git: "https://github.com/MSzoot/Portfolio",
+    finished: true,
+  },
+  {
+    title: "HuryUpGift.com - Comming Soon",
+    desc: "HurryUpGift is a React application designed to help users find the perfect gift for any occasion. By selecting a person and providing a brief description, such as 'cat-loving nerd', users receive AI-generated gift suggestions tailored to the recipient's personality. The app leverages the Amazon affiliate program for seamless purchasing and revenue generation. With its personalized approach, HurryUpGift simplifies gift shopping and ensures that users find the ideal present quickly and easily.",
+    tStack: ["html", "css", "javascript", "react"],
     picture: Coming,
     link: "soon...",
     git: "soon.",
