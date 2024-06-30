@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,17 +16,16 @@ const Contact = () => {
     <form
       className="mx-auto mb-10 flex w-8/12 flex-col md:w-4/12"
       id="contact"
-      netlify
+      data-netlify="true"
     >
       <h2 className="my-10 text-center text-4xl font-bold">Contact</h2>
       <div className="mb-4">
         <label htmlFor="name" className="form-control w-full">
-          Name:
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Your Name"
+            placeholder="Name"
             className="input-bordered input w-full"
             value={formData.name}
             onChange={handleChange}
@@ -37,12 +36,11 @@ const Contact = () => {
 
       <div className="mb-4">
         <label htmlFor="email" className="form-control w-full">
-          Email:
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Email"
             className="input-bordered input w-full"
             value={formData.email}
             onChange={handleChange}
@@ -53,7 +51,6 @@ const Contact = () => {
 
       <div className="mb-4">
         <label htmlFor="message" className="form-control w-full">
-          Message:
           <textarea
             id="message"
             name="message"
