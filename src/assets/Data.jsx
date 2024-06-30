@@ -6,7 +6,7 @@ import Portfolio from "../imgs/Portfolio.webp";
 const data = [
   {
     title: "Kesgrave Dental Care",
-    desc: "I designed and developed a fully responsive website for a local dental practice Kesgrave Dental Care. This multipage site features engaging animations and exceptional performance, meticulously crafted to align with the brand's branding guidelines. This project holds particular significance as my debut paid engagement, receiving enthusiastic praise from the client.",
+    desc: "I developed a fully responsive website for a local dental practice Kesgrave Dental Care. This multipage site features engaging animations and exceptional performance, meticulously crafted to align with the brand's branding guidelines. This project holds particular significance as my debut paid engagement, receiving enthusiastic praise from the client.",
     tStack: ["html", "css", "javascript", "bootstrap"],
     picture: KDCphoto,
     link: "https://kesgravedentalcare.com/",
