@@ -27,7 +27,7 @@ const data = [
     desc: "This personal portfolio website showcases a sleek, minimalistic design. Built with React, it is designed to be easily scalable. The site is fully responsive, features dark and light mode, is performance-optimized, and adheres to best coding practices.",
     tStack: ["html", "css", "javascript", "react", "tailwind", "daisyui"],
     picture: Portfolio,
-    link: "https://marcinszoot.netlify.app/",
+    link: "https://martinszot.netlify.app/",
     git: "https://github.com/MSzoot/Portfolio",
     finished: true,
   },
