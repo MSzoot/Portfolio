@@ -1,5 +1,5 @@
 import { IoMenu } from "react-icons/io5";
-import { useState } from "react"; // Import useState hook
+import { useState } from "react";
 
 export default function Nav({ toggleTheme }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -34,7 +34,7 @@ export default function Nav({ toggleTheme }) {
             Contact
           </a>
           <label
-            className="swap-rotate swap btn-ghost btn"
+            className="swap btn-ghost btn swap-rotate"
             aria-label="Toggle Theme"
           >
             <input type="checkbox" onClick={handleToggle} />
