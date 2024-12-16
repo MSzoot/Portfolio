@@ -12,7 +12,7 @@ export default function Hero() {
             focused primarily on IT hardware repairs, I have recently embarked
             on expanding my skills, with coding quickly becoming a true passion
             of mine. This journey has ignited my creativity and fueled my drive
-            to excel in the realm of programming. Test
+            to excel in the realm of programming.
           </p>
           <a className="btn-primary btn" href="#contact">
             Contact me
